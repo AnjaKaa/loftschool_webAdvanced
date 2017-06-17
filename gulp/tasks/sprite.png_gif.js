@@ -3,7 +3,7 @@
 module.exports = function() {
 	var sprite = require('gulp.spritesmith');
 
-    $.gulp.task('spriteOutput', function() {
+    $.gulp.task('sprite:png_gif', function() {
          var spriteOutput = $.gulp.src("./source/sprite/*.+(png|gif)")
          .pipe(sprite ( { 
          	imgName: 'sprite.png', 
@@ -16,5 +16,4 @@ module.exports = function() {
         return  spriteOutput;
     });
  };
-
 
